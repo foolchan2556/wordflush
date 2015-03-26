@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:background="@drawable/bg1">
+    <TextView android:text="TextView" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:layout_marginBottom="5dip" android:id="@+id/trick_word"></TextView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="horizontal">
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.77" android:id="@+id/trick_input">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="分享自己的记忆方法" android:id="@+id/trick_submit"></Button>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/trick_layout" android:layout_width="match_parent" android:orientation="vertical">
+        <ListView android:layout_marginTop="10dip" android:id="@+id/trick_list" android:layout_height="wrap_content" android:layout_width="match_parent"></ListView>
+    </LinearLayout>
+    
+</LinearLayout>

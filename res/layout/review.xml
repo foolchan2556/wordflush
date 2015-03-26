@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:orientation="vertical" android:background="@drawable/bg1"
+	android:layout_marginLeft="0dip" android:layout_marginRight="0dip"
+	android:layout_marginTop="5dip" android:layout_marginBottom="-4dip">
+
+	<TextView android:layout_width="fill_parent" android:text="单词复习"
+		android:textColor="#000000" android:layout_height="30dip"
+		android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+		android:layout_marginTop="5dip" android:layout_marginBottom="5dip"
+		android:height="25dip" android:textSize="20dip">
+	</TextView>
+
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:orientation="horizontal" android:layout_marginBottom="10dip"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+		<TextView android:id="@+id/testQuickActivity_tv_word"
+			android:layout_gravity="center" android:textColor="#000fff"
+			android:text="good" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" android:layout_marginTop="5dip"
+			android:layout_marginBottom="5dip" android:layout_width="match_parent"
+			android:textSize="25dip" android:layout_height="match_parent"
+			android:height="35dip">
+		</TextView>
+
+	</LinearLayout>
+	<Button android:text="显示释义" android:id="@+id/show"
+		android:layout_width="match_parent" android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip" android:layout_height="wrap_content"></Button>
+
+	<TextView android:layout_width="fill_parent" android:text="音标"
+		android:id="@+id/testQuickActivity_tv_phonetics" android:textColor="#000000"
+		android:textSize="20dip" android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip" android:layout_marginTop="5dip"
+		android:layout_marginBottom="5dip" android:layout_height="25dip">
+	</TextView>
+
+	<LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_height="0dip" android:layout_weight="1"
+		android:layout_width="fill_parent" android:orientation="vertical"
+		android:layout_marginTop="20dip" android:weightSum="1">
+
+		<TextView android:id="@+id/learn_wordActivity_tv_phonetics"
+			android:layout_width="fill_parent" android:textColor="#fff666"
+			android:text="hello" android:textSize="20dip"
+			android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+			android:layout_marginTop="5dip" android:layout_marginBottom="5dip"
+			android:layout_height="30dip">
+		</TextView>
+
+		<TextView android:layout_width="fill_parent" android:text="词典释义 "
+			android:textColor="#000000" android:textSize="20dip"
+			android:layout_height="25dip" android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip" android:layout_marginTop="5dip"
+			android:layout_marginBottom="5dip">
+		</TextView>
+
+		<ScrollView android:id="@+id/ScrollView01"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="0.38">
+
+			<TextView android:layout_height="fill_parent"
+				android:layout_width="fill_parent" android:paddingBottom="5sp"
+				android:paddingLeft="10sp" android:paddingRight="10sp"
+				android:paddingTop="5sp" android:text="hello"
+				android:id="@+id/testQuickActivity_tv_explain" android:textColor="#000fff"
+				android:textSize="20dip" android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip">
+			</TextView>
+
+		</ScrollView>
+
+
+	</LinearLayout>
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="55dip">
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="75dip" android:id="@+id/testQuick_rl_quesition"
+			android:visibility="visible">
+
+			<Button android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true" android:id="@+id/testQuickActivity_b_forget"
+				android:layout_width="wrap_content" android:layout_marginBottom="5dip"
+				android:layout_marginRight="5dip" android:textSize="20sp"
+				android:layout_height="wrap_content" android:text="很陌生">
+			</Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="记住了"
+				android:id="@+id/testQuickActivity_b_remember" android:textSize="20sp"
+				android:layout_alignBaseline="@+id/testQuickActivity_b_forget"
+				android:layout_alignBottom="@+id/testQuickActivity_b_forget"
+				android:layout_toLeftOf="@+id/testQuickActivity_b_familiar"></Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="很眼熟"
+				android:id="@+id/testQuickActivity_b_familiar" android:textSize="20sp"
+				android:layout_alignBaseline="@+id/testQuickActivity_b_remember"
+				android:layout_alignBottom="@+id/testQuickActivity_b_remember"
+				android:layout_toLeftOf="@+id/testQuickActivity_b_forget"></Button>
+
+		</RelativeLayout>
+	</RelativeLayout>
+
+</LinearLayout>

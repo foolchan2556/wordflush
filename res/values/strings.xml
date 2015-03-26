@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, WordFlushActivity!</string>
+	<string name="app_name">WordFlush</string>
+	<string name="copyright">Copyright © 2011 WordFlush</string>
+	<string name="units_per_list">33</string>
+	<string name="words_per_unit">7</string>
+	<string name="trick_url">http://www.zdwmw.com:80/wordflush/rm.php</string>
+</resources>

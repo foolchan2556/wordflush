@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="fill_parent" 
+  android:layout_width="fill_parent" 
+  android:orientation="vertical" 
+  android:background="@drawable/bg1" android:layout_marginLeft="0dip" android:layout_marginRight="0dip" android:layout_marginTop="5dip" android:layout_marginBottom="-4dip">
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout1">
+        <LinearLayout android:layout_height="match_parent" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:weightSum="1">
+            <TextView android:layout_marginTop="5dip" android:layout_height="30dip" android:textSize="20dip" android:text="背诵单词" android:layout_marginRight="5dip" android:layout_width="151dp" android:height="25dip" android:layout_marginBottom="5dip" android:layout_marginLeft="5dip" android:textColor="#000000" android:layout_weight="0.75"></TextView>
+            <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:text="请评价" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_margin="5dip"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+<LinearLayout 
+android:id="@+id/LinearLayout02" 
+android:orientation="horizontal" 
+android:layout_marginBottom="10dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+<TextView 
+android:id="@+id/testQuickActivity_tv_word" 
+android:layout_gravity="center" android:textColor="#000fff" android:text="good" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:layout_marginTop="5dip" android:layout_marginBottom="5dip" android:layout_width="match_parent" android:textSize="25dip" android:layout_height="match_parent" android:height="35dip">
+</TextView>
+
+</LinearLayout>
+
+
+<TextView 
+android:layout_width="fill_parent" 
+android:text="音标" 
+android:id="@+id/testQuickActivity_tv_phonetics" 
+android:textColor="#000000" android:textSize="20dip" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:layout_marginTop="5dip" android:layout_marginBottom="5dip" android:layout_height="25dip">
+</TextView>
+<TextView android:textColor="#fff666" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:textSize="20dip" android:id="@+id/learn_wordActivity_tv_phonetics" android:layout_marginBottom="5dip" android:layout_marginTop="5dip" android:text="hello" android:layout_height="30dip" android:layout_width="fill_parent"></TextView>
+
+<LinearLayout 
+android:id="@+id/LinearLayout03" 
+android:layout_height="0dip" 
+android:layout_weight="1" 
+android:layout_width="fill_parent" 
+android:orientation="vertical" 
+android:layout_marginTop="20dip">
+ 
+<TextView  
+android:layout_width="fill_parent" 
+android:text="词典释义 " android:textColor="#000000" android:textSize="20dip" android:layout_height="25dip" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:layout_marginTop="5dip" android:layout_marginBottom="5dip">
+</TextView>
+
+<ScrollView 
+android:id="@+id/ScrollView01" 
+android:layout_width="fill_parent" 
+android:layout_height="fill_parent">
+
+<TextView android:layout_height="fill_parent" 
+android:layout_width="fill_parent" 
+android:paddingBottom="5sp" 
+android:paddingLeft="10sp" 
+android:paddingRight="10sp" 
+android:paddingTop="5sp" 
+android:text="hello" 
+android:id="@+id/testQuickActivity_tv_explain" android:textColor="#000fff" android:textSize="20dip" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+</TextView>
+
+</ScrollView>
+
+
+</LinearLayout>
+
+<RelativeLayout 
+android:layout_width="fill_parent" android:layout_height="55dip">
+<RelativeLayout android:id="@+id/testQuick_rl_quesition" android:layout_width="fill_parent" android:layout_height="75dip" android:visibility="visible" android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+    <Button android:layout_width="wrap_content" android:id="@+id/testQuickActivity_b_forget" android:layout_alignParentRight="true" android:layout_marginBottom="5dip" android:text="没见过" android:layout_marginRight="5dip" android:layout_alignParentBottom="true" android:textSize="17sp" android:layout_height="wrap_content"></Button>
+    <Button android:layout_width="wrap_content" android:layout_alignBottom="@+id/testQuickActivity_b_forget" android:id="@+id/testQuickActivity_b_remember" android:text="记住了" android:layout_toLeftOf="@+id/testQuickActivity_b_familiar" android:textSize="17sp" android:layout_alignBaseline="@+id/testQuickActivity_b_forget" android:layout_height="wrap_content"></Button>
+    <Button android:layout_width="wrap_content" android:layout_alignBottom="@+id/testQuickActivity_b_remember" android:id="@+id/testQuickActivity_b_familiar" android:text="很眼熟" android:layout_toLeftOf="@+id/testQuickActivity_b_forget" android:textSize="17sp" android:layout_alignBaseline="@+id/testQuickActivity_b_remember" android:layout_height="wrap_content"></Button>
+    <Button android:textSize="22sp" android:layout_height="wrap_content" android:text="记忆法" android:layout_width="wrap_content" android:id="@+id/testQuickActivity_b_trick" android:layout_centerVertical="true" android:layout_alignParentLeft="true"></Button>
+</RelativeLayout>
+</RelativeLayout>
+
+</LinearLayout>
